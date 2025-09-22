@@ -45,7 +45,7 @@ pip install OMOP.zip
 from OMOP import analyze_demographics, analyze_observations, analyze_conditions, compare_conditions
 ```
 
-# 人口統計分析
+# person 人口統計分析
 ```bash
 demo_results = analyze_demographics(df_person)
 print(demo_results['AgeGender'])
