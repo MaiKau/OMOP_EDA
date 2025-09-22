@@ -36,11 +36,9 @@
 
 ```bash
 pip install OMOP.zip
-安裝完成後即可匯入使用。
 
-使用方法
-python
-複製程式碼
+
+## 使用方法
 from OMOP import analyze_demographics, analyze_observations, analyze_conditions, compare_conditions
 
 # 人口統計分析
@@ -61,25 +59,26 @@ print(comp_results['MannWhitneyU'])
 print(comp_results['ChiSquare'])
 所有分析函式皆回傳 dict，可透過指定 key 存取結果，例如：
 
-demo_results['AgeGender'] → 年齡 × 性別交叉表
+demo_results['AgeGender']  年齡 × 性別交叉表
 
-obs_results['Weight_Distribution'] → 體重分布
+obs_results['Weight_Distribution']  體重分布
 
-comp_results['MannWhitneyU'] → 兩疾病年齡分布的檢定結果
+comp_results['MannWhitneyU']  兩疾病年齡分布的檢定結果
+
+查詢當前dict產生項目：
+demo_results.keys()
+obs_results.keys()
+cond_results.keys()
+comp_results.keys()
 
 適用情境
-臨床資料探索分析 (Exploratory Data Analysis, EDA)
-
-醫療研究人員快速產生描述性統計與疾病分布比較
-
-作為 OHDSI/Atlas 等 OMOP 工具的輔助分析
+1.臨床資料探索分析 (Exploratory Data Analysis, EDA)
+2.醫療研究人員快速產生描述性統計與疾病分布比較
+3.作為 OHDSI/Atlas 等 OMOP 工具的輔助分析
 
 系統需求
 Python 3.8+
-
 pandas
-
 matplotlib
-
 scipy
 
