@@ -85,12 +85,12 @@ cond_results.keys()
 comp_results.keys()
 ```
 
-**適用情境**
+**適用情境**  
 1.臨床資料探索分析 (Exploratory Data Analysis, EDA)  
 2.醫療研究人員快速產生描述性統計與疾病分布比較  
 3.作為 OHDSI/Atlas 等 OMOP 工具的輔助分析  
 
-**系統需求**
+**系統需求**  
 Python 3.8+  
 pandas 2.23+  
 matplotlib 3.94+  
