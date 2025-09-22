@@ -37,6 +37,7 @@
 ```bash
 pip install OMOP.zip
 
+---
 
 ## 使用方法
 from OMOP import analyze_demographics, analyze_observations, analyze_conditions, compare_conditions
