@@ -87,9 +87,9 @@ comp_results.keys()
 ```
 
 **Use cases**  
-1.臨床資料探索分析 (Exploratory Data Analysis, EDA)  
-2.醫療研究人員快速產生描述性統計與疾病分布比較  
-3.作為 OHDSI/Atlas 等 OMOP 工具的輔助分析  
+1.Exploratory Data Analysis (EDA) for clinical data  
+2.Rapid generation of descriptive statistics and disease distribution comparisons for medical researchers    
+3.Supplementary analysis for OMOP tools such as OHDSI/Atlas  
 
 **System requirements**  
 Python 3.8+  
