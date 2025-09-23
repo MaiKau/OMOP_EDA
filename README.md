@@ -41,44 +41,44 @@ pip install OMOP.zip
 
 ---
 
-## 使用方法
+## Usage
 ```bash
 from OMOP import analyze_demographics, analyze_observations, analyze_conditions, compare_conditions
 ```
 
-**person 人口統計分析**
+**person demographic analysis**
 ```bash
 demo_results = analyze_demographics(df_person)
 print(demo_results['AgeGender'])
 ```
 
-**observation 分析**
+**observation analysis**
 ```bash
 obs_results = analyze_observations(df_observation, df_person)
 print(obs_results['Weight_Distribution'])
 ```
 
-**condition 分析**
+**condition analysis**
 ```bash
 cond_results = analyze_conditions(df_condition, df_person)
 print(cond_results['Condition_Gender'])
 ```
 
-**疾病比較 (例如：肺癌 vs 口腔癌)**
+**disease comparison (e.g., Lung Cancer vs Oral Cancer)**
 ```bash
 comp_results = compare_conditions(df_condition, df_person, cond1=46718999, cond2=46718920)
 print(comp_results['MannWhitneyU'])
 print(comp_results['ChiSquare'])
 ```
 
-**所有分析函式皆回傳 dict，可透過指定 key 存取結果，例如：**
+**All analysis functions return a dict. Results can be accessed by specifying the key, for example:**
 ```bash
 demo_results['AgeGender']
 obs_results['Weight_Distribution'] 
 comp_results['MannWhitneyU']
 ```
 
-**查詢當前dict產生項目：**
+**Check available keys in the current dict:**
 ```bash
 demo_results.keys()
 obs_results.keys()
@@ -86,14 +86,13 @@ cond_results.keys()
 comp_results.keys()
 ```
 
-**適用情境**  
+**Use cases**  
 1.臨床資料探索分析 (Exploratory Data Analysis, EDA)  
 2.醫療研究人員快速產生描述性統計與疾病分布比較  
 3.作為 OHDSI/Atlas 等 OMOP 工具的輔助分析  
 
-**系統需求**  
+**System requirements**  
 Python 3.8+  
 pandas 2.23+  
 matplotlib 3.94+  
 scipy 1.13.1+  
-
