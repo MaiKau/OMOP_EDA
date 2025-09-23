@@ -1,38 +1,39 @@
 # OMOP_EDA
 
-**OMOP_EDA** 是一個專為 **OMOP Common Data Model (CDM)** 格式設計的臨床資料探索分析套件。  
-它能協助研究人員快速進行 **描述性統計、交叉分析與疾病群體比較**，模組化設計可針對不同資料表分別分析，無需一次執行所有分析。  
+**OMOP_EDA** is an exploratory data analysis (EDA) package designed specifically for the **OMOP Common Data Model (CDM)** format.  
+It helps researchers quickly perform **descriptive statistics, cross-analyses, and disease cohort comparisons**.  
+With its modular design, it allows separate analysis of different data tables without requiring all analyses to be executed at once.  
 
 ---
 
-## 功能特色
+## Features
 
 - **Demographics**  
-  - 年齡分布、性別比例  
-  - 年齡 × 性別、種族 × 性別、族群 × 性別交叉表  
+  - Age distribution, gender ratio  
+  - Age × Gender, Race × Gender, Ethnicity × Gender cross tables  
 
 - **Observations**  
-  - 體重分布 (kg)  
-  - 身高分布 (cm)  
-  - Observation source 觀察值比例統計  
+  - Weight distribution (kg)  
+  - Height distribution (cm)  
+  - Observation source value proportion statistics  
 
 - **Conditions**  
-  - Condition × 性別  
-  - Condition × 年齡群  
-  - Condition × 年份  
+  - Condition × Gender  
+  - Condition × Age group  
+  - Condition × Year  
 
 - **Comparisons**  
-  - 兩疾病年齡分布比較  
-    - Shapiro-Wilk 常態性檢定  
-    - Mann-Whitney U test (非參數檢定)  
-  - 兩疾病性別比例比較 (卡方檢定)  
+  - Age distribution comparison between two diseases  
+    - Shapiro-Wilk normality test  
+    - Mann-Whitney U test (non-parametric test)  
+  - Gender ratio comparison between two diseases (Chi-square test)  
 
 ---
 
-## 套件安裝
+## Installation
 
-1. 下載專案壓縮檔 `OMOP.zip`  
-2. 使用 pip 安裝：  
+1. Download the project archive `OMOP.zip`  
+2. Install using pip:  
 
 ```bash
 pip install OMOP.zip
